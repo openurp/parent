@@ -31,7 +31,7 @@ object Settings extends sbt.AutoPlugin {
     scalaVersion := "3.0.1",
     scalacOptions := Seq("-Xtarget:11", "-deprecation", "-feature"),
     javacOptions := Seq("--release","11","-encoding","utf-8"),
-    crossPaths := true,
+    crossPaths := false,
 
     publishMavenStyle := true,
     publishConfiguration := publishConfiguration.value.withOverwrite(true),
