@@ -4,7 +4,7 @@ import sbt._
 object BuildSettings {
 
   val commonSettings = Seq(
-    organizationName := "The Beangle Software",
+    organizationName := "The OpenURP Software",
     startYear := Some(2005),
     licenses += ("GNU General Public License version 3", new URL("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     crossPaths := false,
