@@ -45,6 +45,7 @@ object Settings extends sbt.AutoPlugin {
       Some("releases" at nexus + "service/local/staging/deploy/maven2")
     },
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
-    resolvers += Resolver.mavenLocal
+    resolvers += Resolver.mavenLocal,
+    libraryDependencies ++= Seq(Dependencies.scalatest)
   )
 }

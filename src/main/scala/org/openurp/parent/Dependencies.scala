@@ -76,6 +76,8 @@ object Dependencies extends sbt.AutoPlugin {
   val beangle_doc_docx = "org.beangle.doc" %% "beangle-doc-docx" % beangle_doc_ver
   val beangle_doc_excel = "org.beangle.doc" %% "beangle-doc-excel" % beangle_doc_ver
 
+  val scalatest = "org.scalatest" %% "scalatest" % "3.2.10" % "test"
+
   override def trigger = allRequirements
 
 }
