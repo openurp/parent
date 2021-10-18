@@ -31,7 +31,7 @@ object Settings extends sbt.AutoPlugin {
     scalaVersion := "3.0.1",
     scalacOptions := Seq("-Xtarget:11", "-deprecation", "-feature"),
     javacOptions := Seq("--release","11","-encoding","utf-8"),
-    crossPaths := true,
+    crossPaths := false,
 
     publishMavenStyle := true,
     publishConfiguration := publishConfiguration.value.withOverwrite(true),
@@ -45,6 +45,7 @@ object Settings extends sbt.AutoPlugin {
       Some("releases" at nexus + "service/local/staging/deploy/maven2")
     },
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
-    resolvers += Resolver.mavenLocal
+    resolvers += Resolver.mavenLocal,
+    libraryDependencies ++= Seq(Dependencies.scalatest)
   )
 }
