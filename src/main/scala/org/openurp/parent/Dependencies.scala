@@ -21,7 +21,7 @@ import sbt.Keys._
 import sbt._
 
 object Dependencies extends sbt.AutoPlugin {
-  val beangle_commons_ver = "5.2.6"
+  val beangle_commons_ver = "5.2.7"
   val beangle_data_ver = "5.3.25"
   val beangle_cdi_ver = "0.3.3"
   val beangle_web_ver = "0.0.2"
@@ -32,7 +32,7 @@ object Dependencies extends sbt.AutoPlugin {
   val beangle_security_ver="4.2.31"
   val beangle_ids_ver="0.2.22"
   val beangle_doc_ver="0.0.8"
-  val beangle_ems_ver="4.1.22"
+  val beangle_ems_ver="4.1.23"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
