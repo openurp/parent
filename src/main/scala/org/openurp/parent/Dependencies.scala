@@ -77,7 +77,10 @@ object Dependencies extends sbt.AutoPlugin {
   val beangle_doc_excel = "org.beangle.doc" %% "beangle-doc-excel" % beangle_doc_ver
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.10" % "test"
-
+  val ehcache = "org.ehcache" % "ehcache" % "3.9.6"
+  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.0.4"
+  val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
+  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.5.6.Final" exclude("org.hibernate", "hibernate-core")
   override def trigger = allRequirements
 
 }
