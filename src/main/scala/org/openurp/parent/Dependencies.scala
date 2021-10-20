@@ -81,6 +81,8 @@ object Dependencies extends sbt.AutoPlugin {
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.0.4"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
   val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.5.6.Final" exclude("org.hibernate", "hibernate-core")
+  val gson ="com.google.code.gson" % "gson" % "2.8.8"
+
   override def trigger = allRequirements
 
 }
