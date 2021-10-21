@@ -21,18 +21,18 @@ import sbt.Keys._
 import sbt._
 
 object Dependencies extends sbt.AutoPlugin {
-  val beangle_commons_ver = "5.2.7"
+  val beangle_commons_ver = "5.2.8"
   val beangle_data_ver = "5.3.25"
   val beangle_cdi_ver = "0.3.3"
-  val beangle_web_ver = "0.0.2"
+  val beangle_web_ver = "0.0.3"
   val beangle_serializer_ver= "0.0.21"
   val beangle_cache_ver= "0.0.24"
-  val beangle_template_ver ="0.0.34"
-  val beangle_webmvc_ver="0.4.5"
+  val beangle_template_ver ="0.0.35"
+  val beangle_webmvc_ver="0.4.6"
   val beangle_security_ver="4.2.31"
-  val beangle_ids_ver="0.2.22"
+  val beangle_ids_ver="0.2.23"
   val beangle_doc_ver="0.0.8"
-  val beangle_ems_ver="4.1.23"
+  val beangle_ems_ver="4.1.24"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -81,6 +81,8 @@ object Dependencies extends sbt.AutoPlugin {
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.0.4"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
   val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.5.6.Final" exclude("org.hibernate", "hibernate-core")
+  val gson ="com.google.code.gson" % "gson" % "2.8.8"
+
   override def trigger = allRequirements
 
 }
