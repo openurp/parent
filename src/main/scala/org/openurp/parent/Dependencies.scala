@@ -32,7 +32,7 @@ object Dependencies extends sbt.AutoPlugin {
   val beangle_security_ver="4.2.31"
   val beangle_ids_ver="0.2.23"
   val beangle_doc_ver="0.0.8"
-  val beangle_ems_ver="4.1.24"
+  val beangle_ems_ver="4.1.26"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -71,6 +71,7 @@ object Dependencies extends sbt.AutoPlugin {
 
   val beangle_ems_web = "org.beangle.ems" %% "beangle-ems-web" % beangle_ems_ver
   val beangle_ems_app = "org.beangle.ems" %% "beangle-ems-app" % beangle_ems_ver
+  val beangle_ems_service = "org.beangle.ems" %% "beangle-ems-service" % beangle_ems_ver
 
   val beangle_doc_pdf = "org.beangle.doc" %% "beangle-doc-pdf" % beangle_doc_ver
   val beangle_doc_docx = "org.beangle.doc" %% "beangle-doc-docx" % beangle_doc_ver
