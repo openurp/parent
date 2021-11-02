@@ -19,7 +19,7 @@ package org.openurp.parent
 
 import sbt._
 
-object Dependencies extends sbt.AutoPlugin {
+object Dependencies {
   val beangle_commons_ver = "5.2.9"
   val beangle_data_ver = "5.3.26"
   val beangle_cdi_ver = "0.3.4"
@@ -27,7 +27,7 @@ object Dependencies extends sbt.AutoPlugin {
   val beangle_serializer_ver= "0.0.22"
   val beangle_cache_ver= "0.0.25"
   val beangle_template_ver ="0.0.36"
-  val beangle_webmvc_ver="0.4.7"
+  val beangle_webmvc_ver="0.4.8"
   val beangle_security_ver="4.2.32"
   val beangle_ids_ver="0.2.24"
   val beangle_doc_ver="0.0.9"
@@ -82,9 +82,5 @@ object Dependencies extends sbt.AutoPlugin {
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
   val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.6.1.Final" exclude("org.hibernate", "hibernate-core")
   val gson ="com.google.code.gson" % "gson" % "2.8.9"
-
-  override def trigger = allRequirements
-
-  override def requires = super.requires
 
 }
