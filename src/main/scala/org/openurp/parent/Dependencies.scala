@@ -20,18 +20,18 @@ package org.openurp.parent
 import sbt._
 
 object Dependencies extends sbt.AutoPlugin {
-  val beangle_commons_ver = "5.2.8"
-  val beangle_data_ver = "5.3.25"
-  val beangle_cdi_ver = "0.3.3"
-  val beangle_web_ver = "0.0.3"
-  val beangle_serializer_ver= "0.0.21"
-  val beangle_cache_ver= "0.0.24"
-  val beangle_template_ver ="0.0.35"
-  val beangle_webmvc_ver="0.4.6"
-  val beangle_security_ver="4.2.31"
-  val beangle_ids_ver="0.2.23"
-  val beangle_doc_ver="0.0.8"
-  val beangle_ems_ver="4.1.27"
+  val beangle_commons_ver = "5.2.9"
+  val beangle_data_ver = "5.3.26"
+  val beangle_cdi_ver = "0.3.4"
+  val beangle_web_ver = "0.0.4"
+  val beangle_serializer_ver= "0.0.22"
+  val beangle_cache_ver= "0.0.25"
+  val beangle_template_ver ="0.0.36"
+  val beangle_webmvc_ver="0.4.7"
+  val beangle_security_ver="4.2.32"
+  val beangle_ids_ver="0.2.24"
+  val beangle_doc_ver="0.0.9"
+  val beangle_ems_ver="4.1.28"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -77,12 +77,14 @@ object Dependencies extends sbt.AutoPlugin {
   val beangle_doc_excel = "org.beangle.doc" %% "beangle-doc-excel" % beangle_doc_ver
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.10" % "test"
-  val ehcache = "org.ehcache" % "ehcache" % "3.9.6"
+  val ehcache = "org.ehcache" % "ehcache" % "3.9.7"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.0.4"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
-  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.5.6.Final" exclude("org.hibernate", "hibernate-core")
-  val gson ="com.google.code.gson" % "gson" % "2.8.8"
+  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.6.1.Final" exclude("org.hibernate", "hibernate-core")
+  val gson ="com.google.code.gson" % "gson" % "2.8.9"
 
   override def trigger = allRequirements
+
+  override def requires = super.requires
 
 }
