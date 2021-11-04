@@ -29,9 +29,9 @@ object Dependencies {
   val beangle_template_ver ="0.0.36"
   val beangle_webmvc_ver="0.4.8"
   val beangle_security_ver="4.2.32"
-  val beangle_ids_ver="0.2.24"
+  val beangle_ids_ver="0.2.25"
   val beangle_doc_ver="0.0.9"
-  val beangle_ems_ver="4.1.28"
+  val beangle_ems_ver="4.1.29"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
