@@ -6,7 +6,7 @@ object BuildSettings {
 
   val commonSettings = Seq(
     organizationName := "The OpenURP Software",
-    startYear := Some(2005),
+    startYear := Some(2014),
     licenses += ("GNU General Public License version 3", new URL("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     crossPaths := false,
 
@@ -22,8 +22,8 @@ object BuildSettings {
       Some("releases" at nexus + "service/local/staging/deploy/maven2")
     },
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
-    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.7"),
-    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.2"),
+    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.8"),
+    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.3"),
     addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.1.2")
   )
 }
