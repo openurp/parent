@@ -20,18 +20,18 @@ package org.openurp.parent
 import sbt._
 
 object Dependencies {
-  val beangle_commons_ver = "5.2.12"
-  val beangle_data_ver = "5.3.27"
-  val beangle_cdi_ver = "0.3.4"
-  val beangle_web_ver = "0.0.4"
-  val beangle_serializer_ver= "0.0.22"
-  val beangle_cache_ver= "0.0.25"
-  val beangle_template_ver ="0.0.36"
-  val beangle_webmvc_ver="0.4.8"
-  val beangle_security_ver="4.2.32"
-  val beangle_ids_ver="0.2.25"
-  val beangle_doc_ver="0.0.9"
-  val beangle_ems_ver="4.1.32"
+  val beangle_commons_ver = "5.2.13"
+  val beangle_data_ver = "5.4.0"
+  val beangle_cdi_ver = "0.3.5"
+  val beangle_web_ver = "0.0.6"
+  val beangle_serializer_ver= "0.0.23"
+  val beangle_cache_ver= "0.0.26"
+  val beangle_template_ver ="0.0.37"
+  val beangle_webmvc_ver="0.4.9"
+  val beangle_security_ver="4.2.33"
+  val beangle_ids_ver="0.2.26"
+  val beangle_doc_ver="0.0.10"
+  val beangle_ems_ver="4.1.36"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -39,9 +39,8 @@ object Dependencies {
 
   val beangle_data_jdbc = "org.beangle.data" %% "beangle-data-jdbc" % beangle_data_ver
   val beangle_data_orm = "org.beangle.data" %% "beangle-data-orm" % beangle_data_ver
-  val beangle_data_model = "org.beangle.data" %% "beangle-data-model" % beangle_data_ver
-  val beangle_data_hibernate = "org.beangle.data" %% "beangle-data-hibernate" % beangle_data_ver
   val beangle_data_transfer = "org.beangle.data" %% "beangle-data-transfer" % beangle_data_ver
+  val beangle_data_excel = "org.beangle.data" %% "beangle-data-excel" % beangle_data_ver
 
   val beangle_cdi_api = "org.beangle.cdi" %% "beangle-cdi-api" % beangle_cdi_ver
   val beangle_cdi_spring = "org.beangle.cdi" %% "beangle-cdi-spring" % beangle_cdi_ver
@@ -74,13 +73,15 @@ object Dependencies {
 
   val beangle_doc_pdf = "org.beangle.doc" %% "beangle-doc-pdf" % beangle_doc_ver
   val beangle_doc_docx = "org.beangle.doc" %% "beangle-doc-docx" % beangle_doc_ver
-  val beangle_doc_excel = "org.beangle.doc" %% "beangle-doc-excel" % beangle_doc_ver
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.10" % "test"
-  val ehcache = "org.ehcache" % "ehcache" % "3.9.7"
-  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.0.4"
+  val ehcache = "org.ehcache" % "ehcache" % "3.10.0"
+  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.0.6"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
-  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.6.1.Final" exclude("org.hibernate", "hibernate-core")
-  val gson ="com.google.code.gson" % "gson" % "2.8.9"
+  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.6.8.Final" exclude("org.hibernate", "hibernate-core")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "5.6.8.Final"
+  val gson ="com.google.code.gson" % "gson" % "2.9.0"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.3.0-alpha14"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.3.0-alpha14"
 
 }
