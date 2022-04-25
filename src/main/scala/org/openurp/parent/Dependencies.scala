@@ -20,18 +20,18 @@ package org.openurp.parent
 import sbt._
 
 object Dependencies {
-  val beangle_commons_ver = "5.2.13"
-  val beangle_data_ver = "5.4.0"
-  val beangle_cdi_ver = "0.3.5"
+  val beangle_commons_ver = "5.2.16"
+  val beangle_data_ver = "5.4.2"
+  val beangle_cdi_ver = "0.3.6"
   val beangle_web_ver = "0.0.6"
   val beangle_serializer_ver= "0.0.23"
   val beangle_cache_ver= "0.0.26"
   val beangle_template_ver ="0.0.37"
-  val beangle_webmvc_ver="0.4.9"
+  val beangle_webmvc_ver="0.5.0"
   val beangle_security_ver="4.2.33"
-  val beangle_ids_ver="0.2.26"
+  val beangle_ids_ver="0.2.27"
   val beangle_doc_ver="0.0.10"
-  val beangle_ems_ver="4.1.36"
+  val beangle_ems_ver="4.1.37"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
