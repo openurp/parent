@@ -20,18 +20,18 @@ package org.openurp.parent
 import sbt._
 
 object Dependencies {
-  val beangle_commons_ver = "5.2.17"
-  val beangle_data_ver = "5.4.5"
-  val beangle_cdi_ver = "0.3.6"
-  val beangle_web_ver = "0.0.6"
-  val beangle_serializer_ver= "0.0.23"
-  val beangle_cache_ver= "0.0.26"
-  val beangle_template_ver ="0.0.37"
-  val beangle_webmvc_ver="0.5.1"
-  val beangle_security_ver="4.2.33"
-  val beangle_ids_ver="0.2.27"
-  val beangle_doc_ver="0.0.10"
-  val beangle_ems_ver="4.3.0"
+  val beangle_commons_ver = "5.3.0"
+  val beangle_data_ver = "5.4.6"
+  val beangle_cdi_ver = "0.3.7"
+  val beangle_web_ver = "0.1.0"
+  val beangle_serializer_ver= "0.0.24"
+  val beangle_cache_ver= "0.0.27"
+  val beangle_template_ver ="0.0.38"
+  val beangle_webmvc_ver="0.5.3"
+  val beangle_security_ver="4.2.35"
+  val beangle_ids_ver="0.2.28"
+  val beangle_doc_ver="0.0.11"
+  val beangle_ems_ver="4.4.5"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -74,14 +74,14 @@ object Dependencies {
   val beangle_doc_pdf = "org.beangle.doc" %% "beangle-doc-pdf" % beangle_doc_ver
   val beangle_doc_docx = "org.beangle.doc" %% "beangle-doc-docx" % beangle_doc_ver
 
-  val scalatest = "org.scalatest" %% "scalatest" % "3.2.10" % "test"
+  val scalatest = "org.scalatest" %% "scalatest" % "3.2.13" % "test"
   val ehcache = "org.ehcache" % "ehcache" % "3.10.0"
-  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.0.6"
+  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.1"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
   val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.6.8.Final" exclude("org.hibernate", "hibernate-core")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "5.6.8.Final"
-  val gson ="com.google.code.gson" % "gson" % "2.9.0"
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.3.0-alpha14"
-  val logback_core = "ch.qos.logback" % "logback-core" % "1.3.0-alpha14"
+  val gson ="com.google.code.gson" % "gson" % "2.9.1"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.3.0-alpha16"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.3.0-alpha16"
 
 }
