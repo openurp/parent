@@ -1,7 +1,7 @@
 import BuildSettings._
 import sbt._
 
-ThisBuild / version := "0.5.19"
+ThisBuild / version := "0.5.20"
 ThisBuild / description := "OpenURP Parent."
 ThisBuild / organization := "org.openurp"
 ThisBuild / homepage := Some(url("https://github.com/openurp/parent"))
