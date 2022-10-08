@@ -23,15 +23,15 @@ object Dependencies {
   val beangle_commons_ver = "5.4.0"
   val beangle_data_ver = "5.5.2"
   val beangle_cdi_ver = "0.4.0"
-  val beangle_web_ver = "0.2.0"
+  val beangle_web_ver = "0.3.0"
   val beangle_serializer_ver= "0.1.0"
   val beangle_cache_ver= "0.1.0"
   val beangle_template_ver ="0.1.0"
-  val beangle_webmvc_ver="0.6.1"
-  val beangle_security_ver="4.3.0"
-  val beangle_ids_ver="0.3.1"
+  val beangle_webmvc_ver="0.6.2"
+  val beangle_security_ver="4.3.1"
+  val beangle_ids_ver="0.3.2"
   val beangle_doc_ver="0.1.0"
-  val beangle_ems_ver="4.5.2"
+  val beangle_ems_ver="4.5.3"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -81,7 +81,7 @@ object Dependencies {
   val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.6.8.Final" exclude("org.hibernate", "hibernate-core")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "5.6.8.Final"
   val gson ="com.google.code.gson" % "gson" % "2.9.1"
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.3.0-alpha16"
-  val logback_core = "ch.qos.logback" % "logback-core" % "1.3.0-alpha16"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.4.3"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.4.3"
 
 }
