@@ -20,6 +20,7 @@ package org.openurp.parent
 import sbt._
 
 object Dependencies {
+<<<<<<< HEAD
   val beangle_commons_ver = "5.4.1"
   val beangle_data_ver = "5.5.5"
   val beangle_cdi_ver = "0.4.1"
@@ -32,6 +33,20 @@ object Dependencies {
   val beangle_ids_ver="0.3.3"
   val beangle_doc_ver="0.1.1"
   val beangle_ems_ver="4.5.11"
+=======
+  val beangle_commons_ver = "5.4.2"
+  val beangle_data_ver = "5.5.6"
+  val beangle_cdi_ver = "0.4.2"
+  val beangle_web_ver = "0.3.5"
+  val beangle_serializer_ver= "0.1.2"
+  val beangle_cache_ver= "0.1.2"
+  val beangle_template_ver ="0.1.2"
+  val beangle_webmvc_ver="0.7.0"
+  val beangle_security_ver="4.3.3"
+  val beangle_ids_ver="0.3.4"
+  val beangle_doc_ver="0.1.2"
+  val beangle_ems_ver="4.6.0"
+>>>>>>> develop
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -53,9 +68,8 @@ object Dependencies {
 
   val beangle_web_action = "org.beangle.web" %% "beangle-web-action" % beangle_web_ver
   val beangle_webmvc_core= "org.beangle.webmvc" %% "beangle-webmvc-core" % beangle_webmvc_ver
-  val beangle_webmvc_freemarker= "org.beangle.webmvc" %% "beangle-webmvc-freemarker" % beangle_webmvc_ver
+  val beangle_webmvc_view= "org.beangle.webmvc" %% "beangle-webmvc-view" % beangle_webmvc_ver
   val beangle_webmvc_support= "org.beangle.webmvc" %% "beangle-webmvc-support" % beangle_webmvc_ver
-  val beangle_webmvc_bootstrap= "org.beangle.webmvc" %% "beangle-webmvc-bootstrap" % beangle_webmvc_ver
 
   val beangle_serializer_text = "org.beangle.serializer" %% "beangle-serializer-text" % beangle_serializer_ver
   val beangle_serializer_protobuf = "org.beangle.serializer" %% "beangle-serializer-protobuf" % beangle_serializer_ver
@@ -74,14 +88,13 @@ object Dependencies {
   val beangle_doc_pdf = "org.beangle.doc" %% "beangle-doc-pdf" % beangle_doc_ver
   val beangle_doc_docx = "org.beangle.doc" %% "beangle-doc-docx" % beangle_doc_ver
 
-  val scalatest = "org.scalatest" %% "scalatest" % "3.2.13" % "test"
-  val ehcache = "org.ehcache" % "ehcache" % "3.10.0"
+  val scalatest = "org.scalatest" %% "scalatest" % "3.2.14" % "test"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.1"
-  val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "5.0.0"
+  val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.0.0"
   val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "5.6.8.Final" exclude("org.hibernate", "hibernate-core")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "5.6.8.Final"
   val gson ="com.google.code.gson" % "gson" % "2.9.1"
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.4.3"
-  val logback_core = "ch.qos.logback" % "logback-core" % "1.4.3"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.4.4"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.4.4"
 
 }
