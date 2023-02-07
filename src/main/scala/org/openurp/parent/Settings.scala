@@ -28,9 +28,9 @@ object Settings extends sbt.AutoPlugin {
     organizationName := "The OpenURP Software",
     licenses += ("GNU Lesser General Public License version 3", new URL("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     startYear := Some(2014),
-    scalaVersion := "3.2.1",
-    scalacOptions := Seq("-Xtarget:11", "-deprecation", "-feature"),
-    javacOptions := Seq("--release","11","-encoding","utf-8"),
+    scalaVersion := "3.2.2",
+    scalacOptions := Seq("-Xtarget:17", "-deprecation", "-feature"),
+    javacOptions := Seq("--release","17","-encoding","utf-8"),
     crossPaths := false,
 
     publishMavenStyle := true,
