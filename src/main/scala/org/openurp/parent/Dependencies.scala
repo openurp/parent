@@ -21,7 +21,7 @@ import sbt._
 
 object Dependencies {
   val beangle_commons_ver = "5.5.0"
-  val beangle_data_ver = "5.6.0"
+  val beangle_data_ver = "5.6.1"
   val beangle_cdi_ver = "0.5.0"
   val beangle_web_ver = "0.3.6"
   val beangle_serializer_ver= "0.1.3"
@@ -31,7 +31,7 @@ object Dependencies {
   val beangle_security_ver="4.3.4"
   val beangle_ids_ver="0.3.5"
   val beangle_doc_ver="0.1.3"
-  val beangle_ems_ver="4.6.6"
+  val beangle_ems_ver="4.6.7"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
