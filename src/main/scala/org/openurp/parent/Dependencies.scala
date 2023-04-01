@@ -21,7 +21,7 @@ import sbt._
 
 object Dependencies {
   val beangle_commons_ver = "5.5.0"
-  val beangle_data_ver = "5.6.9"
+  val beangle_data_ver = "5.6.10"
   val beangle_cdi_ver = "0.5.2"
   val beangle_web_ver = "0.4.1"
   val beangle_serializer_ver= "0.1.3"
@@ -76,9 +76,9 @@ object Dependencies {
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.15" % "test"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.5"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.0.0"
-  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "6.2.0.CR2" exclude("org.hibernate", "hibernate-core")
+  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "6.2.0.Final" exclude("org.hibernate", "hibernate-core")
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.5" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.2.0.CR2"
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.2.0.Final"
   val gson ="com.google.code.gson" % "gson" % "2.10.1"
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.4.6"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.4.6"
