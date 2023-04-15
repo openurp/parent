@@ -21,8 +21,8 @@ import sbt._
 
 object Dependencies {
   val beangle_commons_ver = "5.5.0"
-  val beangle_data_ver = "5.6.10"
-  val beangle_cdi_ver = "0.5.2"
+  val beangle_data_ver = "5.6.11"
+  val beangle_cdi_ver = "0.5.3"
   val beangle_web_ver = "0.4.1"
   val beangle_serializer_ver= "0.1.3"
   val beangle_cache_ver= "0.1.3"
@@ -31,7 +31,7 @@ object Dependencies {
   val beangle_security_ver="4.3.6"
   val beangle_ids_ver="0.3.8"
   val beangle_doc_ver="0.1.3"
-  val beangle_ems_ver="4.6.10"
+  val beangle_ems_ver="4.6.13"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -74,11 +74,11 @@ object Dependencies {
   val beangle_doc_docx = "org.beangle.doc" %% "beangle-doc-docx" % beangle_doc_ver
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.15" % "test"
-  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.5"
+  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.6"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.0.0"
-  val hibernate_jcache = "org.hibernate" % "hibernate-jcache" % "6.2.0.Final" exclude("org.hibernate", "hibernate-core")
-  val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.5" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.2.0.Final"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.2.1.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.6" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.2.1.Final"
   val gson ="com.google.code.gson" % "gson" % "2.10.1"
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.4.6"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.4.6"
