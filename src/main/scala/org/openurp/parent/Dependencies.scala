@@ -21,12 +21,12 @@ import sbt._
 
 object Dependencies {
   val beangle_commons_ver = "5.5.3"
-  val beangle_data_ver = "5.6.18"
+  val beangle_data_ver = "5.6.19"
   val beangle_cdi_ver = "0.5.4"
   val beangle_web_ver = "0.4.2"
   val beangle_serializer_ver= "0.1.4"
   val beangle_cache_ver= "0.1.4"
-  val beangle_template_ver ="0.1.5"
+  val beangle_template_ver ="0.1.6"
   val beangle_webmvc_ver="0.9.3"
   val beangle_security_ver="4.3.7"
   val beangle_ids_ver="0.3.9"
@@ -76,7 +76,7 @@ object Dependencies {
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.16" % "test"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.6"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.0.0"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.2.3.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.2.4.Final" exclude("org.hibernate.orm", "hibernate-core")
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.6" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.2.2.Final"
   val gson ="com.google.code.gson" % "gson" % "2.10.1"
