@@ -20,18 +20,18 @@ package org.openurp.parent
 import sbt._
 
 object Dependencies {
-  val beangle_commons_ver = "5.5.8"
-  val beangle_data_ver = "5.6.23"
-  val beangle_cdi_ver = "0.5.4"
-  val beangle_web_ver = "0.4.4"
-  val beangle_serializer_ver= "0.1.4"
-  val beangle_cache_ver= "0.1.4"
-  val beangle_template_ver ="0.1.6"
-  val beangle_webmvc_ver="0.9.8"
-  val beangle_security_ver="4.3.10"
-  val beangle_ids_ver="0.3.10"
-  val beangle_doc_ver="0.1.6"
-  val beangle_ems_ver="4.6.23"
+  val beangle_commons_ver = "5.6.0"
+  val beangle_data_ver = "5.7.0"
+  val beangle_cdi_ver = "0.5.5"
+  val beangle_web_ver = "0.4.6"
+  val beangle_serializer_ver= "0.1.5"
+  val beangle_cache_ver= "0.1.5"
+  val beangle_template_ver ="0.1.7"
+  val beangle_webmvc_ver="0.9.9"
+  val beangle_security_ver="4.3.11"
+  val beangle_ids_ver="0.3.12"
+  val beangle_doc_ver="0.1.7"
+  val beangle_ems_ver="4.7.0"
 
   val beangle_commons_core = "org.beangle.commons" %% "beangle-commons-core" % beangle_commons_ver
   val beangle_commons_file = "org.beangle.commons" %% "beangle-commons-file" % beangle_commons_ver
@@ -74,13 +74,13 @@ object Dependencies {
   val beangle_doc_docx = "org.beangle.doc" %% "beangle-doc-docx" % beangle_doc_ver
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.16" % "test"
-  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.7"
+  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.8"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.0.0"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.2.7.Final" exclude("org.hibernate.orm", "hibernate-core")
-  val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.7" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.2.7.Final"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.3.0.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.8" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.3.0.Final"
   val gson ="com.google.code.gson" % "gson" % "2.10.1"
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.4.8"
-  val logback_core = "ch.qos.logback" % "logback-core" % "1.4.8"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.4.11"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.4.11"
 
 }
