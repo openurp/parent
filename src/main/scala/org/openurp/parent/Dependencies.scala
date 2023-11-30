@@ -21,7 +21,7 @@ import sbt._
 
 object Dependencies {
   val beangle_commons_ver = "5.6.6"
-  val beangle_data_ver = "5.7.8"
+  val beangle_data_ver = "5.7.9"
   val beangle_cdi_ver = "0.6.0"
   val beangle_web_ver = "0.4.8"
   val beangle_serializer_ver= "0.1.6"
