@@ -27,11 +27,11 @@ object Dependencies {
   val beangle_web_ver = "0.4.11"
   val beangle_serializer_ver= "0.1.9"
   val beangle_cache_ver= "0.1.8"
-  val beangle_template_ver ="0.1.13"
-  val beangle_webmvc_ver="0.9.25"
+  val beangle_template_ver ="0.1.14"
+  val beangle_webmvc_ver="0.9.26"
   val beangle_security_ver="4.3.19"
   val beangle_ids_ver="0.3.16"
-  val beangle_ems_ver="4.8.13"
+  val beangle_ems_ver="4.8.14"
   val beangle_doc_ver="0.3.3"
 
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % beangle_commons_ver
