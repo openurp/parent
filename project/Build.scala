@@ -7,7 +7,7 @@ object BuildSettings {
   val commonSettings = Seq(
     organizationName := "The OpenURP Software",
     startYear := Some(2014),
-    licenses += ("GNU General Public License version 3", new URL("http://www.gnu.org/licenses/lgpl-3.0.txt")),
+    licenses += ("GNU General Public License version 3", url("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     crossPaths := false,
 
     publishMavenStyle := true,

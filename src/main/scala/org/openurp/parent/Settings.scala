@@ -26,7 +26,7 @@ object Settings extends sbt.AutoPlugin {
 
   val common = Seq(
     organizationName := "The OpenURP Software",
-    licenses += ("GNU Lesser General Public License version 3", new URL("http://www.gnu.org/licenses/lgpl-3.0.txt")),
+    licenses += ("GNU Lesser General Public License version 3", url("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     startYear := Some(2014),
     scalaVersion := "3.3.3",
     scalacOptions := Seq("-Xtarget:21", "-deprecation", "-feature"),
