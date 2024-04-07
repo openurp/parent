@@ -22,8 +22,8 @@ object BuildSettings {
       Some("releases" at nexus + "service/local/staging/deploy/maven2")
     },
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
-    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.12"),
-    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.13"),
+    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.14"),
+    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.14"),
     addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1")
   )
 }

@@ -17,8 +17,8 @@
 
 package org.openurp.parent
 
-import sbt.Keys._
-import sbt._
+import sbt.*
+import sbt.Keys.*
 
 object Settings extends sbt.AutoPlugin {
 
@@ -29,8 +29,8 @@ object Settings extends sbt.AutoPlugin {
     licenses += ("GNU Lesser General Public License version 3", new URL("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     startYear := Some(2014),
     scalaVersion := "3.3.3",
-    scalacOptions := Seq("-Xtarget:17", "-deprecation", "-feature"),
-    javacOptions := Seq("--release","17","-encoding","utf-8"),
+    scalacOptions := Seq("-Xtarget:21", "-deprecation", "-feature"),
+    javacOptions := Seq("--target", "21", "--source", "21", "-encoding", "utf-8"),
     crossPaths := false,
 
     publishMavenStyle := true,
