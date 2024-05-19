@@ -17,7 +17,7 @@
 
 package org.openurp.parent
 
-import sbt._
+import sbt.*
 
 object Dependencies {
   val beangle_commons_ver = "5.6.16"
@@ -25,15 +25,16 @@ object Dependencies {
   val beangle_data_ver = "5.8.10"
   val beangle_cdi_ver = "0.6.6"
   val beangle_web_ver = "0.4.12"
-  val beangle_serializer_ver= "0.1.10"
-  val beangle_cache_ver= "0.1.9"
-  val beangle_template_ver ="0.1.15"
-  val beangle_webmvc_ver="0.9.27"
-  val beangle_security_ver="4.3.20"
-  val beangle_ids_ver="0.3.17"
-  val beangle_event_ver="0.0.5"
-  val beangle_doc_ver="0.3.4"
-  val beangle_ems_ver="4.10.0"
+  val beangle_serializer_ver = "0.1.10"
+  val beangle_cache_ver = "0.1.9"
+  val beangle_template_ver = "0.1.15"
+  val beangle_webmvc_ver = "0.9.27"
+  val beangle_security_ver = "4.3.20"
+  val beangle_ids_ver = "0.3.17"
+  val beangle_event_ver = "0.0.5"
+  val beangle_doc_ver = "0.3.4"
+  val beangle_ems_ver = "4.10.0"
+  val beangle_notify_ver = "0.1.7"
 
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % beangle_commons_ver
 
@@ -59,6 +60,8 @@ object Dependencies {
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % beangle_doc_ver
   val beangle_doc_transfer = "org.beangle.doc" % "beangle-doc-transfer" % beangle_doc_ver
 
+  val beangle_notify = "org.beangle.notify" % "beangle-notify" % beangle_notify_ver
+
   var freemarker = "org.freemarker" % "freemarker" % "2.3.32"
   val spring_beans = "org.springframework" % "spring-beans" % "6.1.6"
   val spring_context = "org.springframework" % "spring-context" % "6.1.6"
@@ -73,7 +76,7 @@ object Dependencies {
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.8" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.4.4.Final"
   val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.4.4.Final" exclude("org.hibernate.orm", "hibernate-core")
-  val gson ="com.google.code.gson" % "gson" % "2.10.1"
+  val gson = "com.google.code.gson" % "gson" % "2.10.1"
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.6"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.5.6"
 }
