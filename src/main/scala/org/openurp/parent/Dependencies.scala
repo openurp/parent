@@ -28,7 +28,7 @@ object Dependencies {
   val beangle_serializer_ver = "0.1.10"
   val beangle_cache_ver = "0.1.9"
   val beangle_template_ver = "0.1.18"
-  val beangle_webmvc_ver = "0.9.30"
+  val beangle_webmvc_ver = "0.9.31"
   val beangle_security_ver = "4.3.21"
   val beangle_ids_ver = "0.3.18"
   val beangle_event_ver = "0.0.6"
