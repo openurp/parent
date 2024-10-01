@@ -20,21 +20,21 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons_ver = "5.6.18"
-  val beangle_jdbc_ver = "1.0.3"
-  val beangle_data_ver = "5.8.14"
-  val beangle_cdi_ver = "0.6.9"
-  val beangle_web_ver = "0.5.0"
-  val beangle_serializer_ver = "0.1.11"
-  val beangle_cache_ver = "0.1.10"
-  val beangle_template_ver = "0.1.19"
-  val beangle_webmvc_ver = "0.9.33"
-  val beangle_security_ver = "4.3.22"
-  val beangle_ids_ver = "0.3.19"
-  val beangle_event_ver = "0.0.7"
-  val beangle_doc_ver = "0.4.1"
-  val beangle_ems_ver = "4.10.4"
-  val beangle_notify_ver = "0.1.9"
+  val beangle_commons_ver = "5.6.19"
+  val beangle_jdbc_ver = "1.0.4"
+  val beangle_data_ver = "5.8.15"
+  val beangle_cdi_ver = "0.6.10"
+  val beangle_web_ver = "0.5.1"
+  val beangle_serializer_ver = "0.1.12"
+  val beangle_cache_ver = "0.1.11"
+  val beangle_template_ver = "0.1.20"
+  val beangle_webmvc_ver = "0.9.34"
+  val beangle_security_ver = "4.3.23"
+  val beangle_ids_ver = "0.3.20"
+  val beangle_event_ver = "0.0.8"
+  val beangle_doc_ver = "0.4.2"
+  val beangle_ems_ver = "4.10.5"
+  val beangle_notify_ver = "0.1.10"
 
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % beangle_commons_ver
 
@@ -68,14 +68,14 @@ object Dependencies {
   val spring_tx = "org.springframework" % "spring-tx" % "6.1.13"
   val spring_aop = "org.springframework" % "spring-aop" % "6.1.13"
   val spring_jdbc = "org.springframework" % "spring-jdbc" % "6.1.13"
-  val protobuf = "com.google.protobuf" % "protobuf-java" % "3.25.5"
+  val protobuf = "com.google.protobuf" % "protobuf-java" % "4.28.2"
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.0.0"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.8"
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.8" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.4.9.Final"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.4.9.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.6.1.Final"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.6.1.Final" exclude("org.hibernate.orm", "hibernate-core")
   val gson = "com.google.code.gson" % "gson" % "2.10.1"
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.8"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.5.8"
