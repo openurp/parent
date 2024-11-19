@@ -20,21 +20,22 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons_ver = "5.6.21"
-  val beangle_jdbc_ver = "1.0.5"
-  val beangle_data_ver = "5.8.16"
-  val beangle_cdi_ver = "0.6.10"
-  val beangle_web_ver = "0.5.1"
-  val beangle_serializer_ver = "0.1.12"
-  val beangle_cache_ver = "0.1.11"
-  val beangle_template_ver = "0.1.20"
-  val beangle_webmvc_ver = "0.9.34"
-  val beangle_security_ver = "4.3.23"
-  val beangle_ids_ver = "0.3.20"
-  val beangle_event_ver = "0.0.8"
-  val beangle_doc_ver = "0.4.4"
-  val beangle_ems_ver = "4.10.5"
-  val beangle_notify_ver = "0.1.10"
+  val beangle_commons_ver = "5.6.22"
+  val beangle_jdbc_ver = "1.0.6"
+  val beangle_data_ver = "5.8.18"
+  val beangle_cdi_ver = "0.7.0"
+  val beangle_web_ver = "0.6.0"
+  val beangle_serializer_ver = "0.1.13"
+  val beangle_cache_ver = "0.1.12"
+  val beangle_template_ver = "0.1.21"
+  val beangle_webmvc_ver = "0.10.1"
+  val beangle_buiVer = "0.0.1"
+  val beangle_security_ver = "4.3.25"
+  val beangle_ids_ver = "0.3.21"
+  val beangle_event_ver = "0.0.9"
+  val beangle_doc_ver = "0.4.5"
+  val beangle_ems_ver = "4.10.8"
+  val beangle_notify_ver = "0.1.11"
 
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % beangle_commons_ver
 
@@ -47,6 +48,7 @@ object Dependencies {
 
   val beangle_web = "org.beangle.web" % "beangle-web" % beangle_web_ver
   val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % beangle_webmvc_ver
+  val beangle_bui_bootstrap = "org.beangle.bui" % "beangle-bui-bootstrap" % beangle_buiVer
   val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % beangle_serializer_ver
 
   val beangle_security = "org.beangle.security" % "beangle-security" % beangle_security_ver
@@ -63,20 +65,20 @@ object Dependencies {
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % beangle_notify_ver
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.33"
-  val spring_beans = "org.springframework" % "spring-beans" % "6.1.13"
-  val spring_context = "org.springframework" % "spring-context" % "6.1.13"
-  val spring_tx = "org.springframework" % "spring-tx" % "6.1.13"
-  val spring_aop = "org.springframework" % "spring-aop" % "6.1.13"
-  val spring_jdbc = "org.springframework" % "spring-jdbc" % "6.1.13"
-  val protobuf = "com.google.protobuf" % "protobuf-java" % "4.28.2"
+  val spring_beans = "org.springframework" % "spring-beans" % "6.2.0"
+  val spring_context = "org.springframework" % "spring-context" % "6.2.0"
+  val spring_tx = "org.springframework" % "spring-tx" % "6.2.0"
+  val spring_aop = "org.springframework" % "spring-aop" % "6.2.0"
+  val spring_jdbc = "org.springframework" % "spring-jdbc" % "6.2.0"
+  val protobuf = "com.google.protobuf" % "protobuf-java" % "4.28.3"
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
-  val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.0.0"
+  val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.1.0"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.8"
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.8" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.6.1.Final"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.6.1.Final" exclude("org.hibernate.orm", "hibernate-core")
-  val gson = "com.google.code.gson" % "gson" % "2.10.1"
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.8"
-  val logback_core = "ch.qos.logback" % "logback-core" % "1.5.8"
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.6.2.Final"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.6.2.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val gson = "com.google.code.gson" % "gson" % "2.11.0"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.12"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.5.12"
 }
