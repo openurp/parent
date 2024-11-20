@@ -24,7 +24,7 @@ object Dependencies {
   val beangle_jdbc_ver = "1.0.6"
   val beangle_data_ver = "5.8.18"
   val beangle_cdi_ver = "0.7.0"
-  val beangle_web_ver = "0.6.0"
+  val beangle_web_ver = "0.6.1"
   val beangle_serializer_ver = "0.1.13"
   val beangle_cache_ver = "0.1.12"
   val beangle_template_ver = "0.1.21"
@@ -34,7 +34,7 @@ object Dependencies {
   val beangle_ids_ver = "0.3.21"
   val beangle_event_ver = "0.0.9"
   val beangle_doc_ver = "0.4.5"
-  val beangle_ems_ver = "4.10.8"
+  val beangle_ems_ver = "4.10.9"
   val beangle_notify_ver = "0.1.11"
 
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % beangle_commons_ver

@@ -23,7 +23,7 @@ object BuildSettings {
     },
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
     addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.15"),
-    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.18"),
+    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.19"),
     addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1")
   )
 }
