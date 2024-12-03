@@ -19,6 +19,8 @@ package org.openurp.parent
 
 import sbt.*
 import sbt.Keys.*
+import xerial.sbt.Sonatype.autoImport.*
+import xerial.sbt.Sonatype.sonatypeCentralHost
 
 object Settings extends sbt.AutoPlugin {
 
@@ -40,11 +42,10 @@ object Settings extends sbt.AutoPlugin {
 
     versionScheme := Some("early-semver"),
     pomIncludeRepository := { _ => false }, // Remove all additional repository other than Maven Central from POM
-    publishTo := {
-      val nexus = "https://oss.sonatype.org/"
-      Some("releases" at nexus + "service/local/staging/deploy/maven2")
-    },
-    credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
+    sonatypeProfileName    := "org.openurp",
+    sonatypeCredentialHost := sonatypeCentralHost,
+    sbtPluginPublishLegacyMavenStyle := true,
+    publishTo := sonatypePublishToBundle.value,
     resolvers += Resolver.mavenLocal,
     libraryDependencies ++= Seq(Dependencies.scalatest)
   )
