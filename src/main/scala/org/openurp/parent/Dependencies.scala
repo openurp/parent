@@ -34,7 +34,7 @@ object Dependencies {
   val beangle_ids_ver = "0.3.21"
   val beangle_event_ver = "0.0.9"
   val beangle_doc_ver = "0.4.5"
-  val beangle_ems_ver = "4.10.9"
+  val beangle_ems_ver = "4.10.10"
   val beangle_notify_ver = "0.1.11"
 
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % beangle_commons_ver
