@@ -20,22 +20,22 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons_ver = "5.6.23"
-  val beangle_jdbc_ver = "1.0.6"
-  val beangle_data_ver = "5.8.18"
-  val beangle_cdi_ver = "0.7.0"
-  val beangle_web_ver = "0.6.2"
-  val beangle_serializer_ver = "0.1.13"
-  val beangle_cache_ver = "0.1.12"
-  val beangle_template_ver = "0.1.21"
-  val beangle_webmvc_ver = "0.10.2"
-  val beangle_buiVer = "0.0.1"
-  val beangle_security_ver = "4.3.26"
-  val beangle_ids_ver = "0.3.22"
-  val beangle_event_ver = "0.0.9"
-  val beangle_doc_ver = "0.4.5"
-  val beangle_ems_ver = "4.10.13"
-  val beangle_notify_ver = "0.1.11"
+  val beangle_commons_ver = "5.6.26"
+  val beangle_jdbc_ver = "1.0.10"
+  val beangle_data_ver = "5.8.21"
+  val beangle_cdi_ver = "0.7.2"
+  val beangle_web_ver = "0.6.3"
+  val beangle_serializer_ver = "0.1.16"
+  val beangle_cache_ver = "0.1.13"
+  val beangle_template_ver = "0.1.23"
+  val beangle_webmvc_ver = "0.10.3"
+  val beangle_buiVer = "0.0.2"
+  val beangle_security_ver = "4.3.27"
+  val beangle_ids_ver = "0.3.23"
+  val beangle_event_ver = "0.0.12"
+  val beangle_doc_ver = "0.4.8"
+  val beangle_notify_ver = "0.1.12"
+  val beangle_ems_ver = "4.10.15"
 
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % beangle_commons_ver
 
@@ -64,21 +64,20 @@ object Dependencies {
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % beangle_notify_ver
 
-  var freemarker = "org.freemarker" % "freemarker" % "2.3.33"
-  val spring_beans = "org.springframework" % "spring-beans" % "6.2.0"
-  val spring_context = "org.springframework" % "spring-context" % "6.2.0"
-  val spring_tx = "org.springframework" % "spring-tx" % "6.2.0"
-  val spring_aop = "org.springframework" % "spring-aop" % "6.2.0"
-  val spring_jdbc = "org.springframework" % "spring-jdbc" % "6.2.0"
-  val protobuf = "com.google.protobuf" % "protobuf-java" % "4.28.3"
+  var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
+  val spring_beans = "org.springframework" % "spring-beans" % "6.2.2"
+  val spring_context = "org.springframework" % "spring-context" % "6.2.2"
+  val spring_tx = "org.springframework" % "spring-tx" % "6.2.2"
+  val spring_aop = "org.springframework" % "spring-aop" % "6.2.2"
+  val spring_jdbc = "org.springframework" % "spring-jdbc" % "6.2.2"
+  val protobuf = "com.google.protobuf" % "protobuf-java" % "4.29.3"
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.1.0"
-  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.1.8"
-  val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.1.8" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.6.2.Final"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.6.2.Final" exclude("org.hibernate.orm", "hibernate-core")
-  val gson = "com.google.code.gson" % "gson" % "2.11.0"
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.12"
-  val logback_core = "ch.qos.logback" % "logback-core" % "1.5.12"
+  val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.2.0"
+  val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.2.0" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.6.5.Final"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.6.5.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.16"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.5.16"
 }
