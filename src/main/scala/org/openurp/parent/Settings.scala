@@ -19,8 +19,6 @@ package org.openurp.parent
 
 import sbt.*
 import sbt.Keys.*
-import xerial.sbt.Sonatype.autoImport.*
-import xerial.sbt.Sonatype.sonatypeCentralHost
 
 object Settings extends sbt.AutoPlugin {
 
@@ -30,7 +28,7 @@ object Settings extends sbt.AutoPlugin {
     organizationName := "The OpenURP Software",
     licenses += ("GNU Lesser General Public License version 3", url("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     startYear := Some(2014),
-    scalaVersion := "3.3.5",
+    scalaVersion := "3.3.6",
     scalacOptions := Seq("-Xtarget:21", "-deprecation", "-feature"),
     javacOptions := Seq("--release", "21", "-encoding", "utf-8"),
     crossPaths := false,
@@ -42,10 +40,9 @@ object Settings extends sbt.AutoPlugin {
 
     versionScheme := Some("early-semver"),
     pomIncludeRepository := { _ => false }, // Remove all additional repository other than Maven Central from POM
-    sonatypeProfileName    := "org.openurp",
-    sonatypeCredentialHost := sonatypeCentralHost,
     sbtPluginPublishLegacyMavenStyle := true,
-    publishTo := sonatypePublishToBundle.value,
+    publishTo := localStaging.value,
+    credentials += Credentials(Path.userHome / ".sbt" / "sonatype_central_credentials"),
     resolvers += Resolver.mavenLocal,
     libraryDependencies ++= Seq(Dependencies.scalatest)
   )

@@ -1,7 +1,5 @@
 import sbt.Keys.*
 import sbt.*
-import xerial.sbt.Sonatype.autoImport.*
-import xerial.sbt.Sonatype.sonatypeCentralHost
 
 object BuildSettings {
 
@@ -18,13 +16,11 @@ object BuildSettings {
 
     versionScheme := Some("early-semver"),
     pomIncludeRepository := { _ => false }, // Remove all additional repository other than Maven Central from POM
-    sonatypeProfileName    := "org.openurp",
-    sonatypeCredentialHost := sonatypeCentralHost,
     sbtPluginPublishLegacyMavenStyle := false,
-    publishTo := sonatypePublishToBundle.value,
-    addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "3.12.2"),
+    publishTo := localStaging.value,
+    credentials += Credentials(Path.userHome / ".sbt" / "sonatype_central_credentials"),
     addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.16"),
-    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.21"),
+    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.22"),
     addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1")
   )
 }
