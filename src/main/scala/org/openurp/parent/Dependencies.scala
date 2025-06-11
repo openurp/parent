@@ -23,7 +23,7 @@ object Dependencies {
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % "5.6.28"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.0.11"
-  val beangle_model = "org.beangle.data" % "beangle-model" % "5.8.23"
+  val beangle_model = "org.beangle.data" % "beangle-model" % "5.8.24"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.7.3"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.14"
@@ -40,11 +40,11 @@ object Dependencies {
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.0"
 
   val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.11.2"
-  val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.4.12"
-  val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.4.12"
-  val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.4.12"
-  val beangle_doc_transfer = "org.beangle.doc" % "beangle-doc-transfer" % "0.4.12"
-  val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.4.12"
+  val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.4.13"
+  val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.4.13"
+  val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.4.13"
+  val beangle_doc_transfer = "org.beangle.doc" % "beangle-doc-transfer" % "0.4.13"
+  val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.4.13"
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.13"
 
