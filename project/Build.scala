@@ -19,7 +19,8 @@ object BuildSettings {
     sbtPluginPublishLegacyMavenStyle := false,
     publishTo := localStaging.value,
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_central_credentials"),
-    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.17"),
+
+    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.18"),
     addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.22"),
     addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1")
   )

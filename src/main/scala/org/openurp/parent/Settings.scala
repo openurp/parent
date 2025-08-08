@@ -17,6 +17,7 @@
 
 package org.openurp.parent
 
+import org.beangle.build.sbt.SnapshotPlugin.autoImport.*
 import sbt.*
 import sbt.Keys.*
 
@@ -44,6 +45,7 @@ object Settings extends sbt.AutoPlugin {
     publishTo := localStaging.value,
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_central_credentials"),
     resolvers += Resolver.mavenLocal,
-    libraryDependencies ++= Seq(Dependencies.scalatest)
+    libraryDependencies ++= Seq(Dependencies.scalatest),
+    snapshotRepoUrl := "http://sas.openurp.net/sas/repo/snapshot/upload/{fileName}"
   )
 }
