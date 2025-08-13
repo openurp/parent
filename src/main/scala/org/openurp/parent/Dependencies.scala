@@ -23,7 +23,7 @@ object Dependencies {
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % "5.6.30"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.0.12"
-  val beangle_model = "org.beangle.data" % "beangle-model" % "5.9.0"
+  val beangle_model = "org.beangle.data" % "beangle-model" % "5.9.1"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.7.4"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.15"
@@ -39,12 +39,12 @@ object Dependencies {
 
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.1"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.11.4"
-  val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.4.15"
-  val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.4.15"
-  val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.4.15"
-  val beangle_doc_transfer = "org.beangle.doc" % "beangle-doc-transfer" % "0.4.15"
-  val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.4.15"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.11.5"
+  val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.4.16"
+  val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.4.16"
+  val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.4.16"
+  val beangle_doc_transfer = "org.beangle.doc" % "beangle-doc-transfer" % "0.4.16"
+  val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.4.16"
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.14"
 
@@ -60,8 +60,8 @@ object Dependencies {
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.1.0"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.2.2"
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.2.2" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.0.8.Final"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.0.8.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "6.6.19.Final"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "6.6.19.Final" exclude("org.hibernate.orm", "hibernate-core")
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.18"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.5.18"
 }
