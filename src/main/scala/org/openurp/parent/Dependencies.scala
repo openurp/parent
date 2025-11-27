@@ -23,7 +23,7 @@ object Dependencies {
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % "5.6.32"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.4"
-  val beangle_model = "org.beangle.data" % "beangle-model" % "5.11.1"
+  val beangle_model = "org.beangle.data" % "beangle-model" % "5.11.2"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.9.0"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.16"
@@ -40,7 +40,7 @@ object Dependencies {
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.2"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.0.0"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.14.0"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.14.2"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.4.21"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.4.21"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.4.21"
@@ -50,19 +50,19 @@ object Dependencies {
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.15"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
-  val spring_beans = "org.springframework" % "spring-beans" % "7.0.0"
-  val spring_context = "org.springframework" % "spring-context" % "7.0.0"
-  val spring_tx = "org.springframework" % "spring-tx" % "7.0.0"
-  val spring_aop = "org.springframework" % "spring-aop" % "7.0.0"
-  val spring_jdbc = "org.springframework" % "spring-jdbc" % "7.0.0"
+  val spring_beans = "org.springframework" % "spring-beans" % "7.0.1"
+  val spring_context = "org.springframework" % "spring-context" % "7.0.1"
+  val spring_tx = "org.springframework" % "spring-tx" % "7.0.1"
+  val spring_aop = "org.springframework" % "spring-aop" % "7.0.1"
+  val spring_jdbc = "org.springframework" % "spring-jdbc" % "7.0.1"
   val protobuf = "com.google.protobuf" % "protobuf-java" % "4.33.1"
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.1.0"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.2.3"
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.2.3" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.2.0.CR2"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.2.0.CR2" exclude("org.hibernate.orm", "hibernate-core")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.2.0.CR3"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.2.0.CR3" exclude("org.hibernate.orm", "hibernate-core")
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.21"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.5.21"
 }
