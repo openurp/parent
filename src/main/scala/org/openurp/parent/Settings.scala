@@ -47,7 +47,7 @@ object Settings extends sbt.AutoPlugin {
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_central_credentials"),
     resolvers += Resolver.mavenLocal,
     libraryDependencies ++= Seq(Dependencies.scalatest),
-    snapshotRepoUrl := "http://sas.openurp.net/sas/repo/snapshot/upload/{fileName}",
+    snapshotRepoUrl := "https://sas.openurp.net/sas/repo/snapshot/upload/{fileName}",
     versionPolicyIntention := Compatibility.BinaryAndSourceCompatible
   )
 }
