@@ -45,7 +45,7 @@ object Dependencies {
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.0"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.0"
   val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.5.0"
-  val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.1"
+  val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.2"
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.16"
 
