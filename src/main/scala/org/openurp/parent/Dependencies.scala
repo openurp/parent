@@ -20,14 +20,14 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.1"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.2"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.7"
-  val beangle_model = "org.beangle.data" % "beangle-model" % "5.11.7"
+  val beangle_model = "org.beangle.data" % "beangle-model" % "5.11.8"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.0"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.19"
-  val beangle_template = "org.beangle.template" % "beangle-template" % "0.2.4"
+  val beangle_template = "org.beangle.template" % "beangle-template" % "0.2.5"
 
   val beangle_web = "org.beangle.web" % "beangle-web" % "0.7.3"
   val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.13.2"
@@ -38,9 +38,9 @@ object Dependencies {
   val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.6"
 
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.4"
-  val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.1"
+  val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.2"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.15.4"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.15.5"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.2"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.2"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.2"
