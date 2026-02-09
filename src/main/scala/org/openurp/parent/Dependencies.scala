@@ -35,19 +35,19 @@ object Dependencies {
   val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % "0.1.24"
 
   val beangle_security = "org.beangle.security" % "beangle-security" % "4.4.6"
-  val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.6"
+  val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.7"
 
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.4"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.3"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.15.6"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.15.7"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.2"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.2"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.2"
   val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.5.2"
   val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.4"
 
-  val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.19"
+  val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.20"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
   val spring_beans = "org.springframework" % "spring-beans" % "7.0.3"
