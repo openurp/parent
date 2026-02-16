@@ -48,6 +48,25 @@ object Settings extends sbt.AutoPlugin {
     resolvers += Resolver.mavenLocal,
     libraryDependencies ++= Seq(Dependencies.scalatest),
     snapshotRepoUrl := "https://sas.openurp.net/sas/repo/snapshot/upload/{fileName}",
-    versionPolicyIntention := Compatibility.BinaryAndSourceCompatible
+    versionPolicyIntention := Compatibility.BinaryAndSourceCompatible,
+    //只发布强依赖的库
+    pomPostProcess := { (rootNode: xml.Node) =>
+      def processNode(node: xml.Node): xml.Node = node match {
+        case e: xml.Elem if e.label == "dependencies" =>
+          val filted = e.child.filter {
+            case dep: xml.Elem if dep.label == "dependency" =>
+              val scope = (dep \ "scope").text
+              val optional = (dep \ "optional").text
+              !scope.equals("test") && !optional.equals("true")
+            case _ => true
+          }
+          e.copy(child = filted.map(processNode))
+
+        case e: xml.Elem => e.copy(child = e.child.map(processNode))
+        case other => other
+      }
+
+      processNode(rootNode)
+    }
   )
 }
