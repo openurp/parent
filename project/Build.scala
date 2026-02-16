@@ -21,7 +21,7 @@ object BuildSettings {
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_central_credentials"),
 
     addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.20"),
-    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.24"),
+    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.26"),
     addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1"),
     addSbtPlugin("ch.epfl.scala" % "sbt-version-policy" % "3.2.1"),
     addDependencyTreePlugin
