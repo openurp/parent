@@ -41,21 +41,18 @@ object Dependencies {
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.4"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.5"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.15.11"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.16.0"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.3"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.3"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.3"
   val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.5.3"
-  val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.5"
+  val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.6"
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.20"
-  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.3"
-  val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.1"
+  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.4"
+  val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.2"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
-  val spring_beans = "org.springframework" % "spring-beans" % "7.0.4"
-  val spring_tx = "org.springframework" % "spring-tx" % "7.0.4"
-  val spring_aop = "org.springframework" % "spring-aop" % "7.0.4"
   val protobuf = "com.google.protobuf" % "protobuf-java" % "4.33.5"
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
@@ -64,6 +61,6 @@ object Dependencies {
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.2.3" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.2.3.Final"
   val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.2.3.Final" exclude("org.hibernate.orm", "hibernate-core")
-  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.31"
-  val logback_core = "ch.qos.logback" % "logback-core" % "1.5.31"
+  val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.32"
+  val logback_core = "ch.qos.logback" % "logback-core" % "1.5.32"
 }
