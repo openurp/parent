@@ -20,7 +20,7 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.6"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.9"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.8"
   val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.0"
@@ -41,7 +41,7 @@ object Dependencies {
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.4"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.5"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.16.2"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.16.4"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.3"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.3"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.3"
@@ -50,7 +50,7 @@ object Dependencies {
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.20"
   val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.4"
-  val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.2"
+  val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.3"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
   val protobuf = "com.google.protobuf" % "protobuf-java" % "4.33.5"
