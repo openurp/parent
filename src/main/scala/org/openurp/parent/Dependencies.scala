@@ -20,12 +20,12 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.9"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.10"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.8"
-  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.0"
-  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.0"
-  val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.1"
+  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.1"
+  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.1"
+  val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.2"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.19"
   val beangle_template = "org.beangle.template" % "beangle-template" % "0.2.5"
@@ -39,7 +39,7 @@ object Dependencies {
   val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.8"
 
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.4"
-  val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.5"
+  val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.7"
 
   val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.16.4"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.3"
@@ -53,14 +53,14 @@ object Dependencies {
   val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.3"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
-  val protobuf = "com.google.protobuf" % "protobuf-java" % "4.33.5"
+  val protobuf = "com.google.protobuf" % "protobuf-java" % "4.34.0"
 
   val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.1.0"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.2.3"
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.2.3" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
-  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.2.3.Final"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.2.3.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.2.6.Final"
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.2.6.Final" exclude("org.hibernate.orm", "hibernate-core")
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.32"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.5.32"
 }
