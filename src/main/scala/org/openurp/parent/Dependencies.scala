@@ -20,7 +20,7 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.14"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.15"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.8"
   val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.1"
@@ -30,8 +30,8 @@ object Dependencies {
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.19"
   val beangle_template = "org.beangle.template" % "beangle-template" % "0.2.5"
 
-  val beangle_web = "org.beangle.web" % "beangle-web" % "0.7.5"
-  val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.14.2"
+  val beangle_web = "org.beangle.web" % "beangle-web" % "0.7.6"
+  val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.14.3"
   val beangle_bui_bootstrap = "org.beangle.bui" % "beangle-bui-bootstrap" % "0.1.5"
   val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % "0.1.25"
 
@@ -41,7 +41,7 @@ object Dependencies {
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.6"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.7"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.17.1"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.17.3"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.3"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.3"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.3"
@@ -55,7 +55,7 @@ object Dependencies {
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
   val protobuf = "com.google.protobuf" % "protobuf-java" % "4.34.1"
 
-  val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
+  val scalatest = "org.scalatest" %% "scalatest" % "3.2.20" % "test"
   val servletapi = "jakarta.servlet" % "jakarta.servlet-api" % "6.1.0"
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.2.3"
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.2.3" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
