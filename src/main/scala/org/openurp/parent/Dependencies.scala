@@ -49,7 +49,7 @@ object Dependencies {
   val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.6"
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.20"
-  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.6"
+  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.7"
   val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.4"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
