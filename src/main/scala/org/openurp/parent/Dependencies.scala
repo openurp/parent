@@ -20,12 +20,12 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.15"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.0.17"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.8"
   val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.1"
   val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.1"
-  val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.2"
+  val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.3"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.19"
   val beangle_template = "org.beangle.template" % "beangle-template" % "0.2.5"
@@ -35,20 +35,20 @@ object Dependencies {
   val beangle_bui_bootstrap = "org.beangle.bui" % "beangle-bui-bootstrap" % "0.1.5"
   val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % "0.1.25"
 
-  val beangle_security = "org.beangle.security" % "beangle-security" % "4.4.10"
+  val beangle_security = "org.beangle.security" % "beangle-security" % "4.4.11"
   val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.10"
 
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.6"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.7"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.17.3"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.18.0"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.3"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.3"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.3"
   val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.5.3"
   val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.6"
 
-  val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.20"
+  val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.22"
   val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.7"
   val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.4"
 
