@@ -31,17 +31,17 @@ object Dependencies {
   val beangle_template = "org.beangle.template" % "beangle-template" % "0.2.5"
 
   val beangle_web = "org.beangle.web" % "beangle-web" % "0.7.6"
-  val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.14.3"
+  val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.14.4"
   val beangle_bui_bootstrap = "org.beangle.bui" % "beangle-bui-bootstrap" % "0.1.5"
   val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % "0.1.25"
 
-  val beangle_security = "org.beangle.security" % "beangle-security" % "4.4.11"
+  val beangle_security = "org.beangle.security" % "beangle-security" % "4.4.13"
   val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.10"
 
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.6"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.7"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.18.1"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.18.5"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.3"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.3"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.3"
