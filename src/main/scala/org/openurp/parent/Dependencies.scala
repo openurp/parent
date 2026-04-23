@@ -20,7 +20,7 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.1.0"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.1.1"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.8"
   val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.2"
@@ -31,9 +31,9 @@ object Dependencies {
   val beangle_template = "org.beangle.template" % "beangle-template" % "0.2.6"
 
   val beangle_web = "org.beangle.web" % "beangle-web" % "0.7.7"
-  val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.14.6"
+  val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.14.7"
   val beangle_bui_bootstrap = "org.beangle.bui" % "beangle-bui-bootstrap" % "0.1.5"
-  val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % "0.1.25"
+  val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % "0.1.26"
 
   val beangle_security = "org.beangle.security" % "beangle-security" % "4.4.14"
   val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.13"
@@ -48,8 +48,8 @@ object Dependencies {
   val beangle_doc_html = "org.beangle.doc" % "beangle-doc-html" % "0.5.3"
   val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.6"
 
-  val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.22"
-  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.8"
+  val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.23"
+  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.9"
   val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.4"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
