@@ -38,10 +38,10 @@ object Dependencies {
   val beangle_security = "org.beangle.security" % "beangle-security" % "4.4.14"
   val beangle_ids = "org.beangle.ids" % "beangle-ids" % "0.4.13"
 
-  val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.7"
+  val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.8"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.7"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.18.16"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.18.17"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.3"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.3"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.3"
