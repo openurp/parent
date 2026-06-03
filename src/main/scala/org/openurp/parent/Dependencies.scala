@@ -20,11 +20,11 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.1.2"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.1.3"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.8"
-  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.3"
-  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.3"
+  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.4"
+  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.4"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.3"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.19"
@@ -49,7 +49,7 @@ object Dependencies {
   val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.6"
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.24"
-  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.9"
+  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.10"
   val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.4"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
