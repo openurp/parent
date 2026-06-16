@@ -41,7 +41,7 @@ object Dependencies {
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.9"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.8"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.18.21"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.18.22"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.7"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.7"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.5"
@@ -49,7 +49,7 @@ object Dependencies {
   val beangle_transfer = "org.beangle.transfer" % "beangle-transfer" % "0.0.7"
 
   val beangle_notify = "org.beangle.notify" % "beangle-notify" % "0.1.25"
-  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.11"
+  val beangle_she = "org.beangle.she" % "beangle-she" % "0.0.12"
   val beangle_cron = "org.beangle.cron" % "beangle-cron" % "0.0.6"
 
   var freemarker = "org.freemarker" % "freemarker" % "2.3.34"
