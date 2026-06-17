@@ -60,7 +60,7 @@ object Dependencies {
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.2.4"
   val caffeine_jcache = "com.github.ben-manes.caffeine" % "jcache" % "3.2.4" exclude("org.osgi", "org.osgi.service.component.annotations") exclude("javax.inject", "javax.inject")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.4.1.Final"
-  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.4.3.Final" exclude("org.hibernate.orm", "hibernate-core")
+  val hibernate_jcache = "org.hibernate.orm" % "hibernate-jcache" % "7.4.1.Final" exclude("org.hibernate.orm", "hibernate-core")
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.5.34"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.5.34"
 }
