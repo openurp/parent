@@ -1,23 +1,23 @@
-import BuildSettings._
-import sbt._
+import BuildSettings.*
+import sbt.*
 
-ThisBuild / version := "0.10.55-SNAPSHOT"
-ThisBuild / description := "OpenURP Parent"
-ThisBuild / organization := "org.openurp"
-ThisBuild / homepage := Some(url("https://github.com/openurp/parent"))
-ThisBuild / scmInfo := Some(
+version := "0.11.0-SNAPSHOT"
+description := "OpenURP Parent"
+organization := "org.openurp"
+homepage := Some(uri("https://github.com/openurp/parent"))
+scmInfo := Some(
   ScmInfo(
-    url("https://github.com/openurp/parent"),
+    uri("https://github.com/openurp/parent"),
     "scm:git@github.com:openurp/parent.git"
   )
 )
 
-ThisBuild / developers := List(
+developers := List(
   Developer(
     id = "duantihua",
     name = "Duan Tihua",
     email = "duantihua@163.com",
-    url = url("https://github.com/duantihua")
+    url = uri("https://github.com/duantihua")
   )
 )
 

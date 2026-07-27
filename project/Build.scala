@@ -1,13 +1,16 @@
 import sbt.*
 import sbt.Keys.*
+import com.typesafe.tools.mima.plugin.MimaPlugin.autoImport.mimaPreviousArtifacts
+import sbtversionpolicy.SbtVersionPolicyPlugin.autoImport.{Compatibility, versionPolicyIntention}
 
 object BuildSettings {
 
   /** 与 org.openurp.parent.Settings.stubJavadoc 相同，供本插件工程自身 build 使用。 */
   private val stubJavadocSettings = Seq(
     Compile / doc / sources := Nil,
-    Compile / packageDoc := {
-      val out = (Compile / packageDoc / artifactPath).value
+    Compile / packageDoc := Def.uncached {
+      val converter = fileConverter.value
+      val outFile = (Compile / target).value / s"${name.value}-${version.value}-javadoc.jar"
       val dir = (Compile / target).value / "stub-javadoc"
       IO.createDirectory(dir)
       val docUrl = homepage.value.map(_.toString).getOrElse("https://openurp.github.io/")
@@ -21,33 +24,38 @@ object BuildSettings {
       )
       val manifest = new java.util.jar.Manifest()
       manifest.getMainAttributes.put(java.util.jar.Attributes.Name.MANIFEST_VERSION, "1.0")
-      val mappings = (dir ** "*").get pair Path.rebase(dir, "")
-      IO.jar(mappings, out, manifest, Some(0L))
-      out
+      val mappings = (dir ** "*").get() pair Path.rebase(dir, "")
+      IO.jar(mappings, outFile, manifest, Some(0L))
+      converter.toVirtualFile(outFile.toPath)
     }
   )
 
   val commonSettings = stubJavadocSettings ++ Seq(
     organizationName := "The OpenURP Software",
     startYear := Some(2014),
-    licenses += ("GNU General Public License version 3", url("http://www.gnu.org/licenses/lgpl-3.0.txt")),
+    licenses += sbt.librarymanagement.License("LGPL-3.0", uri("http://www.gnu.org/licenses/lgpl-3.0.txt")),
     crossPaths := false,
 
     publishMavenStyle := true,
-    publishConfiguration := publishConfiguration.value.withOverwrite(true),
-    publishM2Configuration := publishM2Configuration.value.withOverwrite(true),
-    publishLocalConfiguration := publishLocalConfiguration.value.withOverwrite(true),
+    publishConfiguration := Def.uncached(publishConfiguration.value.withOverwrite(true)),
+    publishM2Configuration := Def.uncached(publishM2Configuration.value.withOverwrite(true)),
+    publishLocalConfiguration := Def.uncached(publishLocalConfiguration.value.withOverwrite(true)),
 
     versionScheme := Some("early-semver"),
+    versionPolicyIntention := Compatibility.BinaryAndSourceCompatible,
+    mimaPreviousArtifacts := Set.empty,
     pomIncludeRepository := { _ => false }, // Remove all additional repository other than Maven Central from POM
     sbtPluginPublishLegacyMavenStyle := false,
-    publishTo := localStaging.value,
+    publishTo := {
+      val centralSnapshots = "https://central.sonatype.com/repository/maven-snapshots/"
+      if version.value.endsWith("-SNAPSHOT") then Some("central-snapshots" at centralSnapshots)
+      else localStaging.value
+    },
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_central_credentials"),
 
-    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.0.22"),
-    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.0.27"),
-    addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1"),
-    addSbtPlugin("ch.epfl.scala" % "sbt-version-policy" % "3.2.1"),
-    addDependencyTreePlugin
+    addSbtPlugin("org.beangle.build" % "sbt-beangle-build" % "0.1.1"),
+    addSbtPlugin("org.beangle.tools" % "sbt-beangle-tools" % "0.1.0"),
+    addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.3.1"),
+    addSbtPlugin("ch.epfl.scala" % "sbt-version-policy" % "3.3.0")
   )
 }
