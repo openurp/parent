@@ -42,7 +42,7 @@ object Dependencies {
   val beangle_event = "org.beangle.event" % "beangle-event" % "0.1.9"
   val beangle_config = "org.beangle.config" % "beangle-config" % "1.1.9"
 
-  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.20.3"
+  val beangle_ems_app = "org.beangle.ems" % "beangle-ems-app" % "4.20.5"
   val beangle_doc_pdf = "org.beangle.doc" % "beangle-doc-pdf" % "0.5.10"
   val beangle_doc_docx = "org.beangle.doc" % "beangle-doc-docx" % "0.5.10"
   val beangle_doc_excel = "org.beangle.doc" % "beangle-doc-excel" % "0.5.10"
