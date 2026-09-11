@@ -2,6 +2,25 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.12.0] - 2026-09-11
+
+### Changed
+
+- Upgrade sbt to 2.0.8
+- Upgrade `sbt-beangle-build` to 0.1.7
+- Bump Beangle dependencies: commons 6.3.3, jdbc 1.1.16, data 5.12.9, cdi 0.10.7, cache 0.1.22, template 0.2.12, web 0.7.10, webmvc 0.15.3, bui 0.9.4, serializer 0.1.28, security 4.5.2, ids 0.4.21, event 0.1.11, config 1.1.11, ems 4.20.13, doc 0.5.13, transfer 0.0.8, notify 0.1.27, she 0.0.18, cron 0.0.7
+- Upgrade hibernate-core to 7.4.7.Final, freemarker to 2.3.35, protobuf to 4.36.1, logback to 1.6.3
+
+### Removed
+
+- Drop the `sbt-beangle-tools` plugin dependency; its plugins and downloader now ship with `sbt-beangle-build` 0.1.x
+
+## [0.11.3] - 2026-08-11
+
+### Changed
+
+- Update ems to 4.20.5
+
 ## [0.11.2] - 2026-08-07
 
 ### Changed
@@ -54,7 +73,10 @@ All notable changes to this project are documented in this file.
 
 See git history for 0.10.51 and older releases.
 
-[Unreleased]: https://github.com/openurp/parent/compare/v0.11.1...HEAD
+[Unreleased]: https://github.com/openurp/parent/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/openurp/parent/compare/v0.11.3...v0.12.0
+[0.11.3]: https://github.com/openurp/parent/compare/v0.11.2...v0.11.3
+[0.11.2]: https://github.com/openurp/parent/compare/v0.11.1...v0.11.2
 [0.11.1]: https://github.com/openurp/parent/compare/v0.11.0...v0.11.1
 [0.11.0]: https://github.com/openurp/parent/compare/v0.10.54...v0.11.0
 [0.10.54]: https://github.com/openurp/parent/compare/v0.10.53...v0.10.54

@@ -12,7 +12,7 @@ Shared sbt plugin for OpenURP projects. It provides common build settings and a 
 In `project/plugin.sbt`:
 
 ```scala
-addSbtPlugin("org.openurp" % "sbt-openurp-parent" % "0.11.1")
+addSbtPlugin("org.openurp" % "sbt-openurp-parent" % "0.12.0")
 ```
 
 ## Usage
