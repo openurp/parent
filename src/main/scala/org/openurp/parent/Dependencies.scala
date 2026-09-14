@@ -20,11 +20,11 @@ package org.openurp.parent
 import sbt.*
 
 object Dependencies {
-  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.3.3"
+  val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.3.4"
 
-  val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.16"
-  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.9"
-  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.9"
+  val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.17"
+  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.11"
+  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.11"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.7"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.22"
@@ -61,7 +61,7 @@ object Dependencies {
   val caffeine = "com.github.ben-manes.caffeine" % "caffeine" % "3.2.4"
   val caffeine_jcache = ("com.github.ben-manes.caffeine" % "jcache" % "3.2.4").exclude("org.osgi", "org.osgi.service.component.annotations").exclude("javax.inject", "javax.inject")
   val hibernate_core = "org.beangle.hibernate" % "beangle-hibernate-core" % "7.4.7.Final"
-  val hibernate_jcache = ("org.hibernate.orm" % "hibernate-jcache" % "8.0.0.Beta1").exclude("org.hibernate.orm", "hibernate-core")
+  val hibernate_jcache = ("org.hibernate.orm" % "hibernate-jcache" % "7.4.7.Final").exclude("org.hibernate.orm", "hibernate-core")
   val logback_classic = "ch.qos.logback" % "logback-classic" % "1.6.3"
   val logback_core = "ch.qos.logback" % "logback-core" % "1.6.3"
 }
