@@ -23,8 +23,8 @@ object Dependencies {
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.3.4"
 
   val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.17"
-  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.11"
-  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.11"
+  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.12"
+  val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.12"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.7"
 
   val beangle_cache = "org.beangle.cache" % "beangle-cache" % "0.1.22"
