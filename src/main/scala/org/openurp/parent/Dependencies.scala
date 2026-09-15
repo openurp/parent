@@ -32,8 +32,8 @@ object Dependencies {
 
   val beangle_web = "org.beangle.web" % "beangle-web" % "0.7.10"
   val beangle_webmvc = "org.beangle.webmvc" % "beangle-webmvc" % "0.15.3"
-  val beangle_bui_bootstrap = "org.beangle.bui" % "beangle-bui-bootstrap" % "0.9.4"
-  val beangle_bui_tag = "org.beangle.bui" % "beangle-bui-tag" % "0.9.4"
+  val beangle_bui_bootstrap = "org.beangle.bui" % "beangle-bui-bootstrap" % "0.9.5"
+  val beangle_bui_tag = "org.beangle.bui" % "beangle-bui-tag" % "0.9.5"
   val beangle_serializer = "org.beangle.serializer" % "beangle-serializer" % "0.1.28"
 
   val beangle_security = "org.beangle.security" % "beangle-security" % "4.5.2"
