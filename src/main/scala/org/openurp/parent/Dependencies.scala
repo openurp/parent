@@ -22,8 +22,8 @@ import sbt.*
 object Dependencies {
   val beangle_commons = "org.beangle.commons" % "beangle-commons" % "6.3.6"
 
-  val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.18"
-  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.13"
+  val beangle_jdbc = "org.beangle.jdbc" % "beangle-jdbc" % "1.1.19"
+  val beangle_data_model = "org.beangle.data" % "beangle-data-model" % "5.12.14"
   val beangle_data_hibernate = "org.beangle.data" % "beangle-data-hibernate" % "5.12.13"
   val beangle_cdi = "org.beangle.cdi" % "beangle-cdi" % "0.10.7"
 
