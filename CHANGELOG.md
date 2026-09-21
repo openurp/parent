@@ -2,6 +2,18 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.13.0] - 2026-09-21
+
+### Changed
+
+- Default `scalaVersion` for consumer projects: 3.3.8 → 3.9.0 (LTS)
+- Require JDK 25+: `scalacOptions` now `-Xtarget:25`, `javacOptions` now `--release 25`
+- Add `-Xcheck-macros` to `scalacOptions` (macro hygiene check)
+- Upgrade sbt to 2.0.9
+- Upgrade `sbt-beangle-build` to 0.1.10, `sbt-pgp` to 2.3.2
+- Bump Beangle dependencies: commons 6.3.7, jdbc 1.1.21, data 5.12.16, cdi 0.10.8, cache 0.1.24, template 0.2.14, web 0.7.12, webmvc 0.15.6, bui 0.9.6, serializer 0.1.30, security 4.5.5, ids 0.4.23, event 0.1.12, config 1.1.12, doc 0.5.15, transfer 0.0.10, notify 0.1.28, she 0.0.19, cron 0.0.8
+- Upgrade hibernate-core / hibernate-jcache to 7.4.9.Final
+
 ## [0.12.0] - 2026-09-14
 
 ### Changed

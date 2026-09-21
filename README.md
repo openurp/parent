@@ -5,14 +5,15 @@ Shared sbt plugin for OpenURP projects. It provides common build settings and a 
 ## Requirements
 
 - sbt 2.x (plugin built with sbt 2.0+)
-- Scala 3.3.x / JVM 21 (defaults from `Settings.common`)
+- Scala 3.9.0 (LTS) / JVM 25 (defaults from `Settings.common`)
+- JDK 25 is required: `Settings.common` compiles with `-Xtarget:25` and `--release 25`
 
 ## Install
 
 In `project/plugin.sbt`:
 
 ```scala
-addSbtPlugin("org.openurp" % "sbt-openurp-parent" % "0.12.0")
+addSbtPlugin("org.openurp" % "sbt-openurp-parent" % "0.13.0")
 ```
 
 ## Usage
