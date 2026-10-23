@@ -75,7 +75,7 @@ object Settings extends sbt.AutoPlugin {
     },
     resolvers += Resolver.mavenLocal,
     libraryDependencies ++= Seq(Dependencies.scalatest),
-    snapshotRepoUrl := "https://sas.openurp.net/maven",
+    snapshotRepoUrl := "https://bas.openurp.net/maven",
     versionPolicyIntention := Compatibility.BinaryAndSourceCompatible,
     //只发布强依赖的库
     pomPostProcess := { (rootNode: xml.Node) =>
